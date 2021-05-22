@@ -2,7 +2,8 @@
   <EventFiltering>
     <RuleGroup name="" groupRelation="or">
       <ProcessAccess onmatch="exclude">
-        <SourceImage condition="is">C:\Program Files\Splunk\bin\splunkd.exe</SourceImage>
+        <SourceImage condition="begin with">C:\Program Files\Splunk\</SourceImage>
+        <SourceImage condition="begin with">C:\Program Files\SplunkUniversalForwarder\</SourceImage>
       </ProcessAccess>
     </RuleGroup>
   </EventFiltering>

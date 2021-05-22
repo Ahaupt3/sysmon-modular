@@ -1,0 +1,12 @@
+<Sysmon schemaversion="4.30">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <ImageLoad onmatch="exclude">
+        <Rule groupRelation="and">
+          <Image condition="begin with">C:\Program Files\Splunk\</Image>
+          <Image condition="begin with">C:\Program Files\SplunkUniversalForwarder\</Image>
+        </Rule>
+      </ImageLoad>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
