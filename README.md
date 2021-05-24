@@ -1,3 +1,9 @@
+# QUICK USAGE
+
+1. `cd sysmon-modular`
+2. `. .\Merge-SysmonXml.ps1`
+3. `Merge-AllSysmonXml -Path ( Get-ChildItem '[0-9]*\*.xml') -AsString | Out-File sysmonconfig.xml`
+
 # sysmon-modular | A Sysmon configuration repository for everybody to customise
 
 [![license](https://img.shields.io/github/license/olafhartong/sysmon-modular.svg?style=flat-square)](https://github.com/olafhartong/sysmon-modular/blob/master/license.md)
