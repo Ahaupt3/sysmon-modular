@@ -1,0 +1,9 @@
+<Sysmon schemaversion="4.30">
+	<EventFiltering>
+		<RuleGroup name="" groupRelation="or">
+			<RegistryEvent onmatch="exclude">
+				<Image condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\Updates\16.0.13929.20386\OfficeClickToRun.exe</Image>
+			</RegistryEvent>
+		</RuleGroup>
+	</EventFiltering>
+</Sysmon>
